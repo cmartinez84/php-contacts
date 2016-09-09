@@ -44,7 +44,7 @@
     }
     function save()
     {
-        $_SESSION["list_of_contacts"] = $this;
+        array_push($_SESSION["list_of_contacts"], $this);
     }
     static function getAll()
     {
@@ -54,8 +54,6 @@
     {
         $_SESSION['list_of_contacts'] = "";
     }
-
-
 
     }
 

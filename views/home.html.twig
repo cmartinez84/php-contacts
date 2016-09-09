@@ -6,6 +6,15 @@
   </head>
   <body>
       <h1>Contact Form</h1>
+      {% if contacts is not empty %}
+
+        {% for contact in contacts%}
+        <div class="contactbox">
+            <p class="name">{{contact.first_name}}  {{contact.last_name}}
+            <p class=="address">{{contact.street}} {{contact.city}} {{contact.state}} {{contact.zip}} {{contact.image}}</P>
+        </div>
+        {% endfor %}
+      {% endif%}
       <div class="container">
           <div class="well">
               <form class="" action="/create_contact" method="post">
