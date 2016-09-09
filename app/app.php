@@ -16,4 +16,12 @@
       return $app['twig']->render('home.html.twig');
     });
     return $app;
+    $app->post("/create_contact", function() use ($app){
+      return $app['twig']->render('create_contact.html.twig');
+    });
+    return $app;
+    $app->post("/delete_contact", function() use ($app){
+      return $app['twig']->render('delete_contact.html.twig');
+    });
+    return $app;
 ?>
