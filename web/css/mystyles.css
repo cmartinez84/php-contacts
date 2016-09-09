@@ -7,21 +7,17 @@
     top:0;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-input{
-    clear: both !important;
-}
+
 .formBox{
     position: fixed;
 }
 
-.phonebox input{
+.phoneBox input{
     width: 4em;
     display: inline-block !important;
+}
+.phoneBox label{
+    display: block;
 }
 
 .contactBox{

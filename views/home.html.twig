@@ -39,7 +39,7 @@
                         <label for="email">Email Address:</label>
                         <input class="form-control" type="email" name="name"  placeholder="joe@email.com">
                     </div>
-                     <div class="phonebox">
+                     <div class="phoneBox">
                          <label for="phone">Phone:</label>
                          <span>(</span><input class="form-control" type="text" name="phone1" minlength="3" maxlength="3" placeholder="123"><span>)</span>
                          <input class="form-control" type="text" name="phone2" minlength="3" maxlength="3" placeholder="456"><span>-</span>
@@ -52,7 +52,7 @@
                   <button class="btn btn-danger" type="submit" name="button">DELETE ALL CONTACTS</button>
               </form>
           </div>
-          <div class="col col-sm-8 allContacts col-sm-offset-4">
+          <div class="col col-sm-7 allContacts col-sm-offset-5">
               <h1>All Contacts</h1>
               {% if contacts is not empty %}
             {% for contact in contacts%}
