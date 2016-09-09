@@ -5,6 +5,31 @@
     <title></title>
   </head>
   <body>
-no place like home
+      <h1>Contact Form</h1>
+      <div class="container">
+          <div class="well">
+              <form class="" action="/create_contact" method="post">
+                  <h2 for="name">Name:</h2>
+                  <div class="form-group">
+                      <label for="first_name">First Name:</label>
+                      <input type="text" name="first_name" value="">
+                      <label for="last_name">Last Name:</label>
+                      <input type="text" name="last_name" value="">
+                </div>
+                <h2 for="">Address:</h2>
+                <div class="form-group">
+                     <label for="street">Street:</label>
+                     <input type="text" name="street" value=""placeholder="Ex: 405 Maple Lane">
+                     <label for="city">City</label>
+                     <input type="text" name="city" value="" placeholder="Ex: Portland">
+                     <label for="state">State</label>
+                     <input type="text" name="state" value="" placeholder="Ex: OR">
+                     <label for="zip">Zip</label>
+                     <input type="text" name="zip" value="" placeholder="Ex: 97213">
+                 </div>
+                 <button class="btn btn-success" type="submit" name="button">Submit</button>
+              </form>
+          </div>
+      </div>
   </body>
 </html>
