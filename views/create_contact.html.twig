@@ -56,11 +56,18 @@
           </div>
           <div class="col col-sm-7 allContacts col-sm-offset-5">
               <h1>Here is your New Contact:</h1>
-              <div class="contactBox">
-                <p class="name">Name: <span class="info">{{contact.first_name}}  {{contact.last_name}}<span></p>
-                <p class="address"><span class="info"> {{contact.street}} {{contact.city}} {{contact.state}} {{contact.zip}}{{contact.image}}</span></P>
-                <p class="email"><span class="info">{{contact.email}}</span></p>
-                <p class="phone"><span class="info">{{contact.phone}}</span></p>
+              <div class="contactBox row">
+                  <div class="col-sm-2">
+                      <span class="initials">{{contact.intials}}</span>
+                  </div>
+                  <div class=" col-sm-offset-2 col-sm-8">
+                      <p class="name">Name: <span class="info">{{contact.first_name}}  {{contact.last_name}}<span></p>
+                      <p class="address">Address:<span class="info"> {{contact.street}} {{contact.city}} {{contact.state}} {{contact.zip}}</span></P>
+                      <p class="email">Email:<span class="info">{{contact.email}}</span></p>
+                      <p class="phone">Phone:<span class="info">{{contact.phone}}</span></p>
+
+                  </div>
+
               </div>
 
           </div>

@@ -1,10 +1,15 @@
-h1,h2, label{
-    font-family: 'Baloo Paaji', cursive !important;
+h1,h2{
+    font-family: 'Pacifico', cursive !important;
 }
+h1{
+    text-shadow: 3px 3px 2px  #f2e6ff !important;
+}
+
 body{
     background: url("http://www.publicdomainpictures.net/pictures/50000/velka/halftone-vector-1369657879ZTd.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
 }
 /*.well{
     margin: auto 0;
@@ -31,7 +36,7 @@ body{
 }
 
 .contactBox{
-    background: #ffffcc;
+    background:#ffccff;
 
     padding: 30px;
     border-radius: 5px;
@@ -43,4 +48,12 @@ body{
 }
 .info{
     font-weight: normal;
+}
+.initials{
+    color: white;
+    font-family: 'Pacifico', cursive !important;
+    font-size: 5em;
+    text-shadow: 5px 5px black;
+    padding: 10px;
+    text-align: center;
 }

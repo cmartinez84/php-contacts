@@ -9,6 +9,7 @@
     private $zip;
     private $phone;
     private $email;
+    private $initials;
 
     function __construct($first_name, $last_name, $street, $city, $state, $zip, $phone, $email)
         {
@@ -20,6 +21,7 @@
         $this->zip = $zip;
         $this->phone = $phone;
         $this->email = $email;
+        $this->intials = strtoupper(substr($this->first_name, 0, 1) . substr($this->last_name, 0, 1));
         }
     function getfirst_Name()
         {
@@ -52,6 +54,10 @@
     function getPhone()
     {
         return $this->phone;
+    }
+    function getInitials()
+    {
+        return $this->initials;
     }
     function save()
     {

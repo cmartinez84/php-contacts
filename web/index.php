@@ -5,8 +5,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css" type="text/css">
     <link rel="stylesheet" href="/css/mystyles.css" type="text/css">
