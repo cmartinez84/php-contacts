@@ -8,11 +8,13 @@
     if (empty($_SESSION['list_of_contacts'])){
       $_SESSION['list_of_contacts'] = array();
     }
+
     $app = new Silex\Application();
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views'
     ));
+
     $app->get("/", function() use ($app){
         return $app['twig']->render('home.html.twig', array('contacts' => Contact::getAll()));
     });
@@ -28,6 +30,7 @@
         Contact::deleteAll();
         return $app['twig']->render('delete_contacts.html.twig');
     });
+
     $app->post("/demo", function() use ($app){
         $new_contact = new Contact("Jessica","Fletcher", "698 Candlewood Lane", "Cabot Cove", "Me", "90582", "(555) 800-6378", "DialM@hotmail.com");
         $new_contact-> save();
