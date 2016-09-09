@@ -43,14 +43,16 @@
                          <input disabled class="form-control" type="text" name="phone3" placeholder="7890" minlength="3" maxlength="4">
                      </div>
                  </div>
-                 <button disabled class="btn btn-success" type="submit" name="button">Submit</button>
+                 <button disabled class="btn btn-success form-control" type="submit" name="button">Submit</button>
               </form>
               <form action="/delete_contacts" method="post">
-                  <button disabled class="btn btn-danger" type="submit" name="button">DELETE ALL CONTACTS</button>
+                  <button disabled class="btn btn-danger form-control" type="submit" name="button">DELETE ALL CONTACTS</button>
               </form>
               <form class="" action="/demo" method="post">
                   <button class="form-control btn btn-info" type="submit" name="button">DEMO</button>
               </form>
+              <a href="/"><button class="btn btn-warning form-control" type="button" name="button">HOME</button></a>
+
           </div>
           <div class="col col-sm-7 allContacts col-sm-offset-5">
               <h1>Here is your New Contact:</h1>
@@ -60,7 +62,7 @@
                 <p class="email"><span class="info">{{contact.email}}</span></p>
                 <p class="phone"><span class="info">{{contact.phone}}</span></p>
               </div>
-              <a href="/"><button type="button" name="button">Home</button></a>
+
           </div>
       </div>
   </body>
