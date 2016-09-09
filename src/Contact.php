@@ -9,8 +9,8 @@
     private $zip;
     private $phone;
     private $email;
-    
-    function __construct($first_name, $last_name, $street, $city, $state, $zip, $email, $phone)
+
+    function __construct($first_name, $last_name, $street, $city, $state, $zip, $phone, $email)
         {
         $this->first_name = ucwords(strtolower($first_name));
         $this->last_name = ucwords(strtolower($last_name));
@@ -18,9 +18,8 @@
         $this->city = ucwords(strtolower($city));
         $this->state = strtoupper($state);
         $this->zip = $zip;
-        $this->image = $image;
-        $this->email = $email;
         $this->phone = $phone;
+        $this->email = $email;
         }
     function getfirst_Name()
         {
@@ -45,6 +44,14 @@
     function getZip()
     {
         return $this->zip;
+    }
+    function getEmail()
+    {
+        return $this->email;
+    }
+    function getPhone()
+    {
+        return $this->phone;
     }
     function save()
     {

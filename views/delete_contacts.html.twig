@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +6,7 @@
   </head>
   <body>
       <div class="container">
-          <div class="col-sm-4">
+          <div class="col-sm-4 formBox">
               <form class="" action="/create_contact" method="post">
                   <h2 for="name">Name:</h2>
                   <div class="">
@@ -47,16 +43,20 @@
                          <input disabled class="form-control" type="text" name="phone3" placeholder="7890" minlength="3" maxlength="4">
                      </div>
                  </div>
-                 <button disabled class="btn btn-success" type="submit" name="button">Submit</button>
+                 <button disabled class="form-control btn btn-success" type="submit" name="button">SUBMIT</button>
               </form>
               <form action="/delete_contacts" method="post">
-                  <button disabled class="btn btn-danger" type="submit" name="button">DELETE ALL CONTACTS</button>
+                  <button disabled class="form-control btn btn-danger" type="submit" name="button">DELETE ALL CONTACTS</button>
+              </form>
+              <form class="" action="/demo" method="post">
+                  <button   class="form-control btn btn-info" type="submit" name="button">DEMO</button>
+                   <a href="/"><button class="btn btn-warning form-control" type="button" name="button">HOME</button></a>
               </form>
           </div>
-          <div class="col col-sm-8 allContacts">
-              <h1>All Contacts Have Been Deleted</h1>
+          <div class="col col-sm-7 allContacts col-sm-offset-5">
+                 <h1>All Entries Have Been Deleted</h1>
+             <p>Please click yellow button "HOME" on the left-hand side or "DEMO" to see a quick demo of this app's displaying capabilities </p>
 
-              <a href="/"><button type="button" name="button">Home</button></a>
           </div>
       </div>
   </body>

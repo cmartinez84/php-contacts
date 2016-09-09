@@ -1,15 +1,21 @@
-.well{
+h1,h2, label{
+    font-family: 'Baloo Paaji', cursive !important;
+}
+
+/*.well{
     margin: auto 0;
     position: fixed;
     left: 0;
     height: 100%;
     min-width: 300px;
     top:0;
-}
-
+}*/
 
 .formBox{
     position: fixed;
+    background: #b3ffff;
+    height: 100%;
+    left: 0;
 }
 
 .phoneBox input{
@@ -21,9 +27,16 @@
 }
 
 .contactBox{
-    background: green;
-    border: black 1px solid;
+    background: #ffe6ff;
+
     padding: 30px;
     border-radius: 5px;
     margin: 10px;
+    box-shadow: 0 0 3px 4px black;
+}
+.contactBox p{
+    font-weight: bold;
+}
+.info{
+    font-weight: normal;
 }
