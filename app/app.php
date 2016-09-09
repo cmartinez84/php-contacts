@@ -33,7 +33,7 @@
         $new_contact-> save();
         $new_contact = new Contact("Lucille","Ball", "523 E68th St", "New York City", "NY", "10001", "(212) 800-6783", "LBall@gmail.com");
         $new_contact-> save();
-        $new_contact = new Contact("Frank","Underwood", "1600 Pennsylvania Avenue", "Washington DC", "DC", "20500", "(202) 830-6378", "Funderwood@gmail.com");
+        $new_contact = new Contact("Frank","Underwood", "1600 Pennsylvania Avenue", "Washington DC", "DC", "20500", "(202) 830-6378", "Thunderwood@gmail.com");
         $new_contact-> save();
         return $app['twig']->render('demo.html.twig', array('contacts' => Contact::getAll()));
     });

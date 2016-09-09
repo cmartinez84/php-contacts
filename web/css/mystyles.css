@@ -1,7 +1,11 @@
 h1,h2, label{
     font-family: 'Baloo Paaji', cursive !important;
 }
-
+body{
+    background: url("http://www.publicdomainpictures.net/pictures/50000/velka/halftone-vector-1369657879ZTd.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 /*.well{
     margin: auto 0;
     position: fixed;
@@ -27,12 +31,12 @@ h1,h2, label{
 }
 
 .contactBox{
-    background: #ffe6ff;
+    background: #ffffcc;
 
     padding: 30px;
     border-radius: 5px;
     margin: 10px;
-    box-shadow: 0 0 3px 4px black;
+    box-shadow: 0 0 5px 5px #808080;
 }
 .contactBox p{
     font-weight: bold;
