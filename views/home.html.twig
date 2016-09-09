@@ -5,42 +5,66 @@
     <title></title>
   </head>
   <body>
-      <h1>Contact Form</h1>
-      {% if contacts is not empty %}
 
-        {% for contact in contacts%}
-        <div class="contactbox">
-            <p class="name">{{contact.first_name}}  {{contact.last_name}}
-            <p class=="address">{{contact.street}} {{contact.city}} {{contact.state}} {{contact.zip}} {{contact.image}}</P>
-        </div>
-        {% endfor %}
-      {% endif%}
+
       <div class="container">
-          <div class="well">
+
+          <div class="col-sm-4 formBox">
               <form class="" action="/create_contact" method="post">
                   <h2 for="name">Name:</h2>
-                  <div class="form-group">
+                  <div class="">
                       <label for="first_name">First Name:</label>
-                      <input type="text" name="first_name" value="" required>
+                      <input class="form-control" name="first_name"  required>
                       <label for="last_name">Last Name:</label>
-                      <input type="text" name="last_name" value="" required>
+                      <input  class="form-control" type="text" name="last_name"  required>
                 </div>
-                <h2 for="">Address:</h2>
-                <div class="form-group">
-                     <label for="street">Street:</label>
-                     <input type="text" name="street" value=""placeholder="Ex: 405 Maple Lane" required>
-                     <label for="city">City</label>
-                     <input type="text" name="city" value="" placeholder="Ex: Portland" required>
-                     <label for="state">State</label>
-                     <input type="text" name="state" value="" placeholder="Ex: OR" minlength=1 maxlength=2 required>
-                     <label for="zip">Zip</label>
-                     <input type="text" name="zip" value="" placeholder="Ex: 97213" minlength="5" maxlength="11" required>
+                <h2 for="">Contact:</h2>
+                <div class="">
+                    <div class="">
+                        <label for="street">Street:</label>
+                        <input  class="form-control" type="text" name="street" placeholder="Ex: 405 Maple Lane" required >
+                    </div>
+                    <div class="">
+                        <label for="city">City:</label>
+                        <input  class="form-control" type="text" name="city"  placeholder="Ex: Portland" required>
+                    </div>
+                    <div class="">
+                        <label for="state">State:</label>
+                        <input  class="form-control"type="text" name="state"  placeholder="Ex: OR" maxlength=2 required>
+                    </div><div class="">
+                        <label for="zip">Zip:</label>
+                        <input  class="form-control"type="text" name="zip"  placeholder="Ex: 97213" minlength="5" maxlength="11" required>
+                    </div>
+                    <div class="">
+                        <label for="email">Email Address:</label>
+                        <input class="form-control" type="email" name="name"  placeholder="joe@email.com">
+                    </div>
+                     <div class="phonebox">
+                         <label for="phone">Phone:</label>
+                         <span>(</span><input class="form-control" type="text" name="phone1" minlength="3" maxlength="3" placeholder="123"><span>)</span>
+                         <input class="form-control" type="text" name="phone2" minlength="3" maxlength="3" placeholder="456"><span>-</span>
+                         <input class="form-control" type="text" name="phone3" placeholder="7890" minlength="3" maxlength="4">
+                     </div>
                  </div>
                  <button class="btn btn-success" type="submit" name="button">Submit</button>
               </form>
               <form action="/delete_contacts" method="post">
                   <button class="btn btn-danger" type="submit" name="button">DELETE ALL CONTACTS</button>
               </form>
+          </div>
+          <div class="col col-sm-8 allContacts col-sm-offset-4">
+              <h1>All Contacts</h1>
+              {% if contacts is not empty %}
+            {% for contact in contacts%}
+            <div class="contactBox">
+              <p class="name">Name: <span class="info">{{contact.first_name}}  {{contact.last_name}}<span></p>
+              <p class="address">Address:<span class="info"> {{contact.street}} {{contact.city}} {{contact.state}} {{contact.zip}}</span></P>
+              <!-- <p class="email"><span class="info">{{contact.email}}</span></p>
+              <p class="phone"><span class="info">{{contact.phone}}</span></p> -->
+            </div>
+
+            {% endfor %}
+          {% endif%}
           </div>
       </div>
   </body>

@@ -7,16 +7,20 @@
     private $city;
     private $state;
     private $zip;
-    private $image;
-    function __construct($first_name, $last_name, $street, $city, $state, $zip, $image)
+    private $phone;
+    private $email;
+    
+    function __construct($first_name, $last_name, $street, $city, $state, $zip, $email, $phone)
         {
-        $this->first_name = $first_name;
-        $this->last_name = $last_name;
-        $this->street = $street;
-        $this->city = $city;
-        $this->state = $state;
+        $this->first_name = ucwords(strtolower($first_name));
+        $this->last_name = ucwords(strtolower($last_name));
+        $this->street = ucwords(strtolower($street));
+        $this->city = ucwords(strtolower($city));
+        $this->state = strtoupper($state);
         $this->zip = $zip;
         $this->image = $image;
+        $this->email = $email;
+        $this->phone = $phone;
         }
     function getfirst_Name()
         {
