@@ -19,8 +19,9 @@
     $app->post("/create_contact", function() use ($app){
         $new_contact = new Contact($_POST['first_name'],$_POST['last_name'], $_POST['street'], $_POST['city'], $_POST['state'], $_POST['zip'], $_POST['image'] );
         $new_contact-> save();
+        // echo $new_contact->getfirstName();
         var_dump($new_contact);
-      return $app['twig']->render('create_contact.html.twig');
+      return $app['twig']->render('create_contact.html.twig', array('contact'=> $new_contact));
     });
 
     $app->post("/delete_contact", function() use ($app){

@@ -18,11 +18,11 @@
         $this->zip = $zip;
         $this->image = $image;
         }
-    function getFirstName()
+    function getfirst_Name()
         {
         return $this->first_name;
         }
-    function getLastName()
+    function getlast_Name()
         {
         return $this->last_name;
         }
