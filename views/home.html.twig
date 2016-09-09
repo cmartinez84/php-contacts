@@ -12,20 +12,20 @@
                   <h2 for="name">Name:</h2>
                   <div class="form-group">
                       <label for="first_name">First Name:</label>
-                      <input type="text" name="first_name" value="">
+                      <input type="text" name="first_name" value="" required>
                       <label for="last_name">Last Name:</label>
-                      <input type="text" name="last_name" value="">
+                      <input type="text" name="last_name" value="" required>
                 </div>
                 <h2 for="">Address:</h2>
                 <div class="form-group">
                      <label for="street">Street:</label>
-                     <input type="text" name="street" value=""placeholder="Ex: 405 Maple Lane">
+                     <input type="text" name="street" value=""placeholder="Ex: 405 Maple Lane" required>
                      <label for="city">City</label>
-                     <input type="text" name="city" value="" placeholder="Ex: Portland">
+                     <input type="text" name="city" value="" placeholder="Ex: Portland" required>
                      <label for="state">State</label>
-                     <input type="text" name="state" value="" placeholder="Ex: OR">
+                     <input type="text" name="state" value="" placeholder="Ex: OR" minlength=1 maxlength=2 required>
                      <label for="zip">Zip</label>
-                     <input type="text" name="zip" value="" placeholder="Ex: 97213">
+                     <input type="text" name="zip" value="" placeholder="Ex: 97213" minlength="5" maxlength="11" required>
                  </div>
                  <button class="btn btn-success" type="submit" name="button">Submit</button>
               </form>
